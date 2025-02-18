@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#home">Auto Gallery</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-action-btn upload-gallery-btn">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <span>Upload</span>
+            </button>
+            <button class="nav-action-btn view-gallery-btn">
+                <i class="fas fa-car"></i>
+                <span>Gallery</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <div class="main-image">
+                    <img src="images/blue toya.jpg" alt="Car" id="mainImage">
+                </div>
+                
+                <div class="image-info">
+                    <h2 class="car-title">Luxury Toyota</h2>
+                    <div class="car-details">
+                        <span class="detail"><i class="fas fa-car"></i> Model: 2024</span>
+                        <span class="detail"><i class="fas fa-tachometer-alt"></i> Speed: 280 km/h</span>
+                    </div>
+                    <div class="zoom-controls">
+                        <button class="zoom-btn" id="zoomIn">+</button>
+                        <button class="zoom-btn" id="zoomOut">-</button>
+                    </div>
+                </div>
+                
+                <div class="thumbnails">
+                    <!-- Thumbnails will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-section">
+            <h3>Add Your Car to Gallery</h3>
+            <div class="upload-box" id="dropZone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & Drop your car image or</p>
+                <label for="fileInput" class="upload-btn">Choose File</label>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+            </div>
+            <div class="upload-preview" id="uploadPreview"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Auto Gallery</h3>
+                <p>Discover the finest collection of luxury and sports cars. Upload and share your own car photos with our community.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Gallery</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Auto Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
